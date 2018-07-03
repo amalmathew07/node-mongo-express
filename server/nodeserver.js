@@ -19,9 +19,9 @@ app.get('/',(req,res) => {
         }).catch(err =>{
             console.log("Error --- ",err);
         })
-
+        client.close();
     });
-    client.close();
+    
 });
 
 app.listen(3000);
