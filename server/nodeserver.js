@@ -6,7 +6,7 @@ var port = process.env.PORT || 3000;
 //Mongo DB
 var MongoClient = require('mongodb').MongoClient;
 
-app.get('/',(req,res) => {
+app.get('/age',(req,res) => {
     MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,client) => {
 
         if (err) {
