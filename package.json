@@ -15,6 +15,9 @@
     "mongodb": "^3.1.0",
     "mongoose": "^5.2.0"
   },
+  "engines": {
+    "node" : "10.1.0"
+  },
   "devDependencies": {
     "expect": "^1.20.2",
     "mocha": "^5.2.0",

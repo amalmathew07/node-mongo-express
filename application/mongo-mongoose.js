@@ -18,9 +18,8 @@ app.post('/addlogin',(req,res) => {
     })
 });
 
+//Secure with JWT
 app.post('/login',(req,res) => {
-
-
 
 });
 
@@ -65,8 +64,15 @@ app.get('/getplayer',(req,res) => {
     })
 });
 
+app.get('/getplayer/:id',(req,res) => {
+    var id = req.params.id;
 
+    player.findById(id).then((doc) => {
+        res.json(doc);
+    })
+})
 
 app.listen(3000,() => {
 
 })
+

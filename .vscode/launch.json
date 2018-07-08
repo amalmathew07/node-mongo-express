@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/playground/promisetest.js"
+            "program": "${workspaceFolder}/application/mongo-mongoose.js"
         }
     ]
 }
